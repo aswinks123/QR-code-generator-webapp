@@ -38,7 +38,7 @@ def qr_generator(url,foreground,background,col2):
 def Generate_QR():
 
     st.title('Color QR - QR code maker')
-    url = st.text_input('type the URL or text to generate QR code')
+    url = st.text_input('Type the URL or text to generate QR code')
     col1, col2 = st.columns(2)
     with col1:
         allcolors = ['Black', 'Red', 'Blue', 'White', 'Yellow', 'Cyan', 'Magenta']
@@ -87,7 +87,7 @@ def Generate_QR():
 def page2():
     st.subheader("Scan QR-Code")
 
-    uploaded_file =st.file_uploader("Upload a QR code", accept_multiple_files=False)
+    uploaded_file =st.file_uploader("Upload or Drag and drop a QR code file", accept_multiple_files=False)
 
 
 
