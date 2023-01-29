@@ -11,13 +11,13 @@ pipeline{
 
     stage('Build Image'){
         steps{
-            sh 'docker build -t streamlit .'
+            sh 'sudo docker build -t streamlit .'
 
         }
     }
     stage('Run Image'){
         steps{
-            sh 'docker run -d -p 8501:8501 --name aswin-streamlit streamlit'
+            sh 'sudo docker run -d -p 8501:8501 --name aswin-streamlit streamlit'
 
         }
     }
