@@ -123,13 +123,14 @@ def page3():
 def Home():
 
     about="""
-    Color-QR is a webapp for creaing QR codes. It is free and made entirly using Python.
+    Color-QR is a webapp for creating QR codes. It is free and made entirely using Python.
     This app allows to generate QR codes and decode the content of existing QR codes!
     
     Choose an option from side bar to get started!
     
     
     """
+
     st.title("ColorQR online QR code generator")
     st.title("")
     st.title("")
