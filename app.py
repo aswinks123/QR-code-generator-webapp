@@ -61,7 +61,7 @@ def Generate_QR():
     with col3:
         if st.button('Generate'):
             if url == "":
-                st.error('Please enter the text or URL', icon="🚨")
+                st.error('Please enter the text or URL to generate', icon="🚨")
             elif foreground == background:
                 st.error('Foreground and Background colors cannot be the same', icon="🚨")
             else:
