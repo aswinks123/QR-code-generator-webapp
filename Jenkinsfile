@@ -1,5 +1,6 @@
 pipeline{
     agent any
+    stages{
     stage('Clon Repository'){
         /*Cloning the repository*/
         steps{
@@ -24,8 +25,12 @@ pipeline{
         steps{
             echo 'process completed and deployed'
         }
-
+    
     }
+    }
+
+    
+    
     
 
 }
