@@ -114,8 +114,8 @@ def page2():
 
 
 def page3():
-    st.markdown("Created by Aswin KS. This project is deployed a a part of my college project")
-    st.markdown("Thanks")
+    st.markdown("Created by Aswin KS. This project is deployed a a part of my college project,")
+    st.markdown("Tools: Azure, GIT, Jenkins, Docker, Linux, terraform")
 
 
 def Home():
