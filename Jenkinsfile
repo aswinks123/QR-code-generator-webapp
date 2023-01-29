@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    stages('Clon Repository'){
+    stage('Clon Repository'){
         /*Cloning the repository*/
         steps{
             checkout scm
@@ -8,19 +8,19 @@ pipeline{
 
     }
 
-    stages('Build Image'){
+    stage('Build Image'){
         steps{
             sh 'docker build -t streamlit .'
 
         }
     }
-    stages('Run Image'){
+    stage('Run Image'){
         steps{
             sh 'docker run -d -p 8501:8501' --name aswin-streamlit streamlit
 
         }
     }
-    stages('Testing'){
+    stage('Testing'){
         steps{
             echo 'process completed and deployed'
         }
