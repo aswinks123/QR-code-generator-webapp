@@ -7,6 +7,7 @@ import qrcode
 import time
 from pyzbar.pyzbar import decode
 import cv2
+PAGE_TITLE = "Color-QR"
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
