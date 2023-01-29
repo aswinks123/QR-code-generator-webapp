@@ -17,6 +17,8 @@ pipeline{
     }
     stage('Run Image'){
         steps{
+            sh 'sudo docker stop aswin-streamlit'
+            sh 'sudo docker rm aswin-streamlit'
             sh 'sudo docker run -d -p 8501:8501 --name aswin-streamlit streamlit'
 
         }
