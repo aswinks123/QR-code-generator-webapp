@@ -17,8 +17,8 @@ pipeline{
     }
     stage('Run Image'){
         steps{
-            
-            ansible-playbook  ./playbook-for-deployment.yml
+
+            sh 'ansible-playbook  ./playbook-for-deployment.yml'
 
            
 
