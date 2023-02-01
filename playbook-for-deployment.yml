@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  become: false
+
+  tasks:
+      - name: Stop running container
+        command: docker stop aswin-streamlit
+        ignore_errors: yes
+
+      - name: Remove running container
+        command: docker rm  aswin-streamlit
+        ignore_errors: yes
+
+
+      #- name: Remove Old Docker image
+        #command: docker rmi  simple-devops-image
+       # ignore_errors: yes
+
+
+     
+      - name: create a container with the streamlit image
+        command: docker run -d --name aswin-streamlit -p 8501:8501 streamlit
+
