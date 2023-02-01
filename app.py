@@ -117,7 +117,7 @@ def page2():
 def page3():
     st.subheader("About")
     st.markdown("Created by Aswin KS")
-    st.markdown("Tools: Azure, GIT, Jenkins, Docker, Linux, terraform")
+    st.markdown("Tools: Azure, GIT, Jenkins, Docker, Linux, terraform, Ansible")
 
 
 def Home():
