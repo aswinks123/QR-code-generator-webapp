@@ -38,7 +38,7 @@ def qr_generator(url,foreground,background,col2):
 
 def Generate_QR():
 
-    st.title('Color QR - QR code maker')
+    st.title('ColorQR - QR code maker')
     url = st.text_input('Enter the URL or text to generate QR code')
     col1, col2 = st.columns(2)
     with col1:
