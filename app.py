@@ -131,7 +131,7 @@ def Home():
     
     """
 
-    st.title("ColorQR online QR code generator")
+    st.title("ColorQR - QR code maker")
     st.title("")
     st.title("")
     st.subheader(about)
