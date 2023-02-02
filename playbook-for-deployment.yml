@@ -11,13 +11,14 @@
         command: docker rm  aswin-streamlit
         ignore_errors: yes
 
+      - name: create a container with the streamlit image
+        command: docker run -d --name aswin-streamlit -p 8501:8501 streamlit
 
-      #- name: Remove Old Docker image
-        #command: docker rmi  simple-devops-image
-       # ignore_errors: yes
+
+      - name: Remove Old Docker image
+        command: docker images -a | grep none | awk '{ print $3; }' | xargs docker rmi -f        
 
 
      
-      - name: create a container with the streamlit image
-        command: docker run -d --name aswin-streamlit -p 8501:8501 streamlit
+      
 
