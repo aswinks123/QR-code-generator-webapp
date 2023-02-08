@@ -15,9 +15,7 @@
         command: docker run -d --name aswin-streamlit -p 8501:8501 streamlit
 
 
-      - name: Remove Old Docker image
-        command: docker images -a | grep none | awk '{ print $3; }' | xargs docker rmi -f        
-
+      
 
      
       
