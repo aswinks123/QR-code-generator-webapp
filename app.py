@@ -118,6 +118,10 @@ def page3():
     st.subheader("About")
     st.markdown("Created by Aswin KS")
     st.markdown("Tools: Azure, GIT, Jenkins, Docker, Linux, terraform, Ansible, AWS")
+    import platform
+    host = platform.node()
+    st.markdown("Current host is")
+    st.markdown(host)
 
 
 def Home():
